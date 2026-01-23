@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Mis 50 - Seba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-card">
+        
+        <div class="header-section">
+            <div class="column-photo">
+                <img src="img/Seba_Playa_50.jpeg" alt="Seba">
+            </div>
+            <div class="column-text">
+                <h1>Mis 50</h1>
+                <h2>Seba</h2>
+                <div class="column-text">
+                    <p><strong>14 de Marzo de 2026 | 21:30</strong></p>
+                    <p>Club House Grand Bell</p>
+                    <p>148 e/472 y 476 - Puesto 4</p>
+                    <p>City Bell - La Plata</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="divider"></div> -->
+
+        <div class="details-section" style="background: var(--blue-gradient);">
+            <h3>Cuenta Regresiva</h3>
+            <div id="timer" class="timer">
+                00d : 00h : 00m : 00s
+            </div>        
+        </div>
+
+        <!-- <div class="divider"></div> -->
+
+        <div class="details-section">
+            <h3>La Gran Noche</h3>
+            <p>Vos sabes que me encanta bailar, divertirme y festejar la vida….</p>
+            <p>Seguro me viste hacerlo en algún cumpleaños, casamiento o evento donde hubo música y joda.</p>
+            <p>Ahora me toca invitarte a vos a que lo hagas en mi fiesta.</p>
+            <p>Porque no es un cumpleaños más… <span class="highlight">¡son los 50!</span></p>
+            <p>Acompañame a vivir una noche única e inolvidable.</p>
+        </div>
+
+        <div class="details-section" style="background: var(--blue-gradient);">
+            <h3>Ubicación</h3>
+            <p><strong>Importante:</strong> Si ingresás en auto, asegurate de tener el seguro vigente y no superar los 20 km/h.<br>
+            Es lento, si... pero hay cámaras y la multa me llega a mi 😅</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5410.750474314038!2d-58.06816781141399!3d-34.91345627755863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dc53b1d62147%3A0xde5b4fa4207cb8fc!2sCountry%20Gran%20Bell%202!5e0!3m2!1ses-419!2sar!4v1768580997742!5m2!1ses-419!2sar" 
+                width="100%" 
+                height="450" 
+                style="border:0; border-radius: 15px;"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a href="https://maps.app.goo.gl/tbVwewvuNbcchctSA" target="_blank" class="btn">Cómo llegar</a>
+        </div>
+
+    <div class="details-section">
+        <h3>Dress Code</h3>
+        <p>Vestite como quieras, lo importante es que la pases bien.<br>
+        (Con ropa, por favor 😅)</p>
+    </div>
+
+    <div class="details-section" style="background: var(--blue-gradient);">
+        <h3>Obsequios</h3>
+        <p>Venir a festejar conmigo es lo único realmente importante.<br>
+        Ahora… si además querés mimarme un poquito, podés hacerlo con un obsequio<br>
+        o con una contribución a la siguiente cuenta bancaria.</p>
+        <button id="btnAbrirModal" class="btn">Contribuir</button>
+    </div>
+
+    <div id="miModal" class="modal-container">
+        <div class="modal-content">
+            <span class="close-modal" id="btnCerrar">&times;</span>
+            <h2>Datos de la Cuenta</h2>
+            <div class="account-details">
+                <p><strong>Banco: </strong>Banco de la Provincia de Buenos Aires</p>
+                <p><strong>Alias: </strong>seba.marinier</p>
+                <p><strong>CBU: </strong>0140999803200093588970</p>                   
+                <p><strong>Titular: </strong>Sebastian Marinier</p>
+            </div>
+            <p style="margin-top:15px; font-size: 0.9rem; color: #cc8512;"><strong>¡Muchas gracias!</strong></p>            
+        </div>
+    </div>
+
+    <div class="details-section">
+        <h3>Confirmación</h3>
+        <p>¡Espero contar con tu presencia!<br>
+        Amo a los chicos, pero esta vez quiero que solo te ocupes de disfrutar la noche.</p>
+        <a href="https://forms.gle/y7evy4ksWyARhuSi7" class="btn">Confirmar Asistencia</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

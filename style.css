@@ -1,0 +1,227 @@
+        /* Fondo general de la página */
+        :root {
+            --blue-gradient: linear-gradient(180deg, #b0c4ff 0%, #ffffff 100%);
+            --dark-text: #1a1a1a;
+            --light-text: #ffffff;
+            --gold-button: #a6a279;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 10px;
+            background: #d1d1d1 url('img/Fondo_seccion_diseño_50.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* CONTENEDOR ÚNICO: Todo va aquí dentro para mantener el mismo ancho */
+        .main-card {
+            width: 100%;
+            max-width: 1000px;
+            background: url('img/Fondo_seccion_diseño_50.png') no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- PARTE SUPERIOR (2 COLUMNAS) --- */
+        .header-section {
+            display: flex;
+            flex-direction: row;
+            background: rgba(255, 255, 255, 0.1); /* Capa muy sutil */
+        }
+
+        .column-photo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .column-photo img {
+            width: 100%;
+            max-width: 380px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .column-text {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            /* background: rgba(255, 255, 255, 0.2);  */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #1a1a1a;
+        }
+
+        /* Para "Mis 50" */
+        .column-text h1 { 
+            font-size: 4rem; 
+            margin: 0; 
+            font-family: 'Playfair Display', serif; 
+            font-weight: 700;
+            color: #000;
+        }
+
+        /* Para "Seba" */
+        .column-text h2 {
+            font-size: 5.5rem; /* Un poco más grande para destacar */
+            margin: 5px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            background: linear-gradient(45deg, #001f3f, #3a7bd5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .column-text p {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+            font-style: italic;
+        }        
+
+        /* DIVISOR ELEGANTE: Para dar continuidad sin separar */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .timer {
+            font-size: 2.5rem;
+            font-weight: bold;
+            /*color: #2c3e50;*/
+            color: #9c9758;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--gold-button);
+            color: white;
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+
+        /* Estilo para el fondo del modal (oculto por defecto) */
+        .modal-container {
+            display: none; /* Oculto inicialmente */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6); /* Fondo oscuro semitransparente */
+            backdrop-filter: blur(5px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Clase que usaremos para mostrar el modal con JS */
+        .modal-container.is-visible {
+            display: flex;
+        }
+
+        /* Ajuste del contenido del modal que ya tenías */
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 25px;
+            cursor: pointer;
+            color: #666;
+        }      
+
+        /* --- PARTE INFERIOR (TEXTO PERSONAL) --- */
+        .details-section {
+            padding: 20px 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.25); /* Un poco más de contraste
+            /* background: #1a1a1a; */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #1a1a1a;
+        }
+
+        .details-section h3 {
+            font-family: 'Times New Roman', serif;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #002366;
+        }
+
+        .details-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+            font-style: italic;
+        }
+
+        .highlight {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #001f3f;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* RESPONSIVIDAD */
+        @media (max-width: 850px) {
+            .header-section {
+                flex-direction: column;
+            }
+            .column-photo {
+                padding: 20px;
+            }
+            .column-photo img {
+                max-width: 85%;
+            }
+            .column-text {
+                padding: 30px 20px;
+            }
+            .details-section {
+                padding: 40px 20px;
+            }
+            .details-section p {
+                font-size: 1.2rem;
+            }
+        }
