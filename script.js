@@ -31,26 +31,3 @@ const x = setInterval(function() {
         document.getElementById("timer").innerHTML = "¡LLEGÓ EL DÍA! 🥳";
     }
 }, 1000);
-
-// ---- Para mostrar el modal para la cuenta bancaria
-
-const modal = document.getElementById('miModal');
-const btnAbrir = document.getElementById('btnAbrirModal');
-const btnCerrar = document.getElementById('btnCerrar');
-
-// Abrir modal
-btnAbrir.onclick = function() {
-    modal.classList.add('is-visible');
-}
-
-// Cerrar modal al tocar la X
-btnCerrar.onclick = function() {
-    modal.classList.remove('is-visible');
-}
-
-// Cerrar modal si se toca fuera del recuadro blanco
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.classList.remove('is-visible');
-    }
-}
