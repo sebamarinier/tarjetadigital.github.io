@@ -16,7 +16,7 @@
                 <img src="img/Seba_Playa_50.jpeg" alt="Seba">
             </div>
             <div class="column-text">
-                <h1>Mis 50...</h1>
+                <h1>Mis 50</h1>
                 <h2>Seba</h2>
                 <div class="column-text">
                     <p><strong>14 de Marzo de 2026 | 21:30</strong></p>
@@ -30,7 +30,7 @@
         <!-- <div class="divider"></div> -->
 
         <div class="details-section" style="background: var(--blue-gradient);">
-            <h3>Cuenta Regresiva</h3>
+            <h3>Faltan ...</h3>
             <div id="timer" class="timer">
                 00d : 00h : 00m : 00s
             </div>        
@@ -72,8 +72,8 @@
     <div class="details-section" style="background: var(--blue-gradient);">
         <h3>Obsequios</h3>
         <p>Venir a festejar conmigo es lo único realmente importante.<br>
-        Ahora… si además querés mimarme un poquito, podés hacerlo con un obsequio<br>
-        o con una contribución a la siguiente cuenta bancaria.</p>
+        Ahora… si además querés mimarme un poquito, podés hacerlo<br>
+        con un obsequio o contribución.</p>
         <button id="btnAbrirModal" class="btn">Contribuir</button>
     </div>
 
@@ -94,12 +94,26 @@
     <div class="details-section">
         <h3>Confirmación</h3>
         <p>¡Espero contar con tu presencia!<br>
-        Amo a los chicos, pero esta vez quiero que solo te ocupes de disfrutar la noche.</p>
+        Por favor confirmame antes del 28 de febrero.</p>
         <a href="https://forms.gle/y7evy4ksWyARhuSi7" class="btn">Confirmar Asistencia</a>
+    </div>
+
+    <div class="music-player">
+        <audio id="bgMusic" loop autoplay>
+            <source src="audio/Coldplay - Viva La Vida.mp3" type="audio/mpeg">
+        </audio>
+        <button id="musicBtn" class="float-btn">
+            <div id="musicIconContainer">
+                <svg id="svgPlay" viewBox="0 0 24 24" width="30" height="30" fill="#4B0082">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg id="svgPause" viewBox="0 0 24 24" width="30" height="30" fill="#4B0082" style="display:none;">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+            </div>
+        </button>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
